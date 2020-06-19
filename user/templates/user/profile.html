@@ -1,0 +1,21 @@
+{% extends 'user/base.html' %}
+{% block title %}
+        profile
+{% endblock %}
+{% block content %}
+    x<div class="container" style="height:650px;">
+        <div class="row" >
+            <div class="col-4 container" style="top:110px;height: 500px;box-shadow: 0px 0px 10px 10px #ddd;">
+                <div class="image" style="margin:30px 50px 0px 50px;top:110px;border-radius:50%;height: 250px;box-shadow: 0px 0px 10px 10px #ddd;">
+                    <img src="media/{{image}}" class="img-responsive" width="280" height="280" style="border-radius: 50%;">
+                </div>
+                <form action="/user/upload"enctype="multipart/form-data" method="POST">
+                    {% csrf_token %}
+                    {{form.as_table}}
+                    <input type="submit" value="submit" style="width:300px;margin:25px;padding-top:15px;padding-bottom: 40px;">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

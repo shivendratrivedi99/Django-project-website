@@ -1,0 +1,243 @@
+body {
+    /* text-align: center; */
+    background-color: rgb(255, 255, 255);
+    /* position: relative; */
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#page_tile {
+    /* width: 100%; */
+    height: 80px;
+    background-color: #fff;
+    /* margin-bottom: 50px; */
+    padding: 10px 50px;
+    text-align: center;
+    /* position: fixed; */
+    /* z-index: 1; */
+    /* border: 5x solid; */
+    /* box-shadow: 0px 1px 10px 0px rgba(228, 212, 212, 0.542); */
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+.active-page {
+    border-bottom: 3px solid rgba(73, 69, 69, 0.836);
+}
+
+.profile-name {
+    margin-left: 75px;
+    width:150px;
+    overflow: hidden;
+}
+
+.profile-name a {
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+#header {
+    width: 100%;
+    /* position: fixed; */
+    background-color: white;
+    padding: 15px;
+    /* text-align: center; */
+    /* border-radius: 10px; */
+    /* margin-bottom: 10px; */
+    box-shadow: 0px 12px 11px 0px rgba(228, 212, 212, 0.542);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+#av {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+/* #header:hover{ */
+
+/* } */
+
+#content {
+    /* width: 100%; */
+    margin: 0px 5px 0px 5px;
+    /* background-color: green; */
+    /* border-radius: 5px; */
+}
+
+#footer {
+    /* position: static; */
+    /* background-color: gray; */
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+    height: 5098x;
+    background-image: url("/static/app1/images/f.jpg");
+    background-size: cover;
+    /* border-radius: 12px; */
+}
+
+ul {
+    /* top:0px; */
+    background-color: #ffffff;
+    /* position: fixed; */
+    overflow: hidden;
+    /* padding: 0; */
+    /* margin: 0; */
+    margin-top: 16px;
+    margin-left: 230px;
+    list-style-type: none;
+    /*for removing bullets*/
+}
+
+li {
+    float: left;
+    padding: 0px 10px;
+}
+
+li a {
+    display: block;
+    padding: 12px;
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    /*for removing underline*/
+}
+
+li a:hover {
+    background-color: black;
+    color: #ffffff;
+    background-color: #c6c5ca;
+    text-decoration: none;
+}
+
+.l {
+    padding: 20px 0px;
+}
+
+.ll{
+    color:white;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.ll .container a{
+    text-decoration: none;
+    color: white;
+}
+.ll .container a:hover{
+    background-color: white;
+    color:black;
+}
+.ll .container:hover a{
+    background-color: white;
+    color:black;
+}
+.lll{
+    /* margin-top: 5px; */
+    background-color: white;
+}
+.footer-col{
+    color:white;
+    font-weight: bold;
+    padding: 50px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 3px solid white;
+}
+
+.in-box {
+    width: 200px;
+    height: 100px;
+    background-color: purple;
+    padding: 20px;
+
+}
+.in-box a{
+    font-size: 34px;
+    text-decoration: none;
+    color:white;
+    /* background-color: rgba(255, 255, 255, 0.747); */
+}
+.right-box{
+    background-color: rgb(226, 208, 208)
+}
+
+input {
+    height: 30px;
+    width: 375px;   
+    border: 1px solid #aaa;
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 3px 2px 1px rgba(228, 212, 212, 0.842); */
+    padding: 25px 28px;
+    margin: 10px 0px;
+    outline: none !important;
+    /* outline: none blue; */
+    /* margin-right: 500px; */
+        
+}
+input:focus{
+    border: 2px solid rgb(76, 182, 224);
+}
+input:hover{
+    outline:1px solid rgb(72, 182, 233);
+}
+
+
+.minwidth {
+    width: 150px;
+    /* float: left; */
+}
+@keyframes example {
+    from {box-shadow: 3px 3px 15px 5px rgba(233, 228, 228, 0.473);}
+    to {box-shadow: 2px 2px 3px 1px rgba(233, 228, 228, 0.473);}
+  }
+  
+  /* The element to apply the animation to */
+ 
+     
+#subscribe{
+    padding: 20px;
+    border-radius: 5px;
+    width: 375px;   
+    font-weight: bold;
+    background-color: rgb(139, 230, 87);
+    box-shadow: 3px 3px 15px 5px rgba(233, 228, 228, 0.473);
+}
+#subscribe:hover{
+    background-color: rgb(104, 223, 35);
+    animation-name: example;
+    animation-duration: 0.1s;
+    box-shadow: 2px 2px 3px 1px rgba(233, 228, 228, 0.473);
+    
+}
+
+
+
+#cpyrt{
+    padding: 40px 3px;
+    margin-top:20px;
+    background-image: linear-gradient(to right, rgb(44, 46, 48) , rgb(139, 230, 87));
+}
+
+.btm-l{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color:white;
+}
+
+.btm-r{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-weight: bold; */
+    color: white;
+    font-style: italic;
+}
+

@@ -1,0 +1,45 @@
+.conta{
+    margin-top: 110px;
+}
+.whitish{
+    background-color: rgba(228, 217, 217, 0.575);
+    height: 650px;
+}
+.appeal{
+    background-image: url("/static/app1/images/about.jpg");
+    background-size: cover;
+    margin: 100px 0px 0px 50px;
+    background-color: rgba(84, 140, 224, 0.575);
+    height: 350px;
+    padding-top: 130px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.letsgo{
+    margin: 250px 0px 0px 50px;
+    left: 50px;
+    background-color: rgb(139, 230, 87);
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px 5px rgba(233, 228, 228, 0.473);
+}
+.tag{
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.596);
+}
+#start{
+    text-align: center;
+    font-size: 26px;
+    padding:65px 70px;
+    font-weight:bold;
+    text-decoration: none;
+    
+}
+.letsgo:hover{
+    background-color: rgb(104, 223, 35);
+    animation-name: example;
+    animation-duration: 0.1s;
+    box-shadow: 2px 2px 3px 1px rgba(233, 228, 228, 0.473);
+    
+}

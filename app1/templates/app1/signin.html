@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="100000000">
+    
+    <!-- <link href="{% static 'app1/css/bootstrap.css'%}" rel="stylesheet"> -->
+    <link href="{% static 'app1/css/main.css'%}" rel="stylesheet">
+    <script src="{% static 'app1/js/jquery.js' %}"></script>
+    <script src="{% static 'app1/js/angular.js' %}"></script>
+    <title>Document</title>
+    <script >
+        var a="{{status}}";
+        $(document).ready(function(){
+            if (a==0){
+                $(".error").slideDown(200,function(){
+                     $(".error").css("color","white");
+                 });
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="page_tile"><h1>Querypedia</h1></div>
+    <div class="main_container">
+        <div class="signup_block">
+            <div class="top_panel">
+                    <a href="/auth/signin" ><div class="content"  id="active" onclick="changeActive()">Sign In</div></a>
+                    <a href="/auth/signup"><div class="content" onclick="changeActive()">SignUp</div></a>
+            </div></br>
+            <div id="p">Login to your account</div>
+            <form action="/auth/signin" method="POST">
+                {% csrf_token %}
+                <div class="error" style="display: none;width: 365px;text-align: center;margin:auto;border-radius:50px;background-color: red; ">Please check email or password</div>
+                {{form.email}} {{form.password}}<br><br> 
+                <!-- <div id="condition">I agree to <a href="#" class="hi-link">terms and conditions </a>and <a href="#"class="hi-link">privacy policy</a></div></br></br> -->
+                <input id="submit" type="submit" name="confirm">
+            </form>
+        </div>    
+    </div>
+        
+    
+</body>
+</html>
